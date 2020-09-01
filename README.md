@@ -1,2 +1,3 @@
-# MatchApp
+# SmartShopping
+
 an IOS app 
