@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		87F076DA2505C7EF0027B08A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F076D92505C7EF0027B08A /* AppDelegate.swift */; };
 		87F076DC2505C7EF0027B08A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F076DB2505C7EF0027B08A /* SceneDelegate.swift */; };
-		87F076DE2505C7EF0027B08A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F076DD2505C7EF0027B08A /* ViewController.swift */; };
 		87F076E12505C7EF0027B08A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F076DF2505C7EF0027B08A /* Main.storyboard */; };
 		87F076E42505C7EF0027B08A /* SmartShopping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87F076E22505C7EF0027B08A /* SmartShopping.xcdatamodeld */; };
 		87F076E62505C7F00027B08A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F076E52505C7F00027B08A /* Assets.xcassets */; };
 		87F076E92505C7F00027B08A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F076E72505C7F00027B08A /* LaunchScreen.storyboard */; };
+		87F076F6250787840027B08A /* ItemListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F076F5250787840027B08A /* ItemListVC.swift */; };
+		87F076F8250789D50027B08A /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F076F7250789D50027B08A /* ItemViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87F076D62505C7EF0027B08A /* SmartShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F076D92505C7EF0027B08A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F076DB2505C7EF0027B08A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87F076DD2505C7EF0027B08A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87F076E02505C7EF0027B08A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		87F076E32505C7EF0027B08A /* SmartShopping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartShopping.xcdatamodel; sourceTree = "<group>"; };
+		87F076E32505C7EF0027B08A /* SmartShopping.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = SmartShopping.xcdatamodel; sourceTree = "<group>"; };
 		87F076E52505C7F00027B08A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87F076E82505C7F00027B08A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87F076EA2505C7F00027B08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F076F5250787840027B08A /* ItemListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListVC.swift; sourceTree = "<group>"; };
+		87F076F7250789D50027B08A /* ItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,11 @@
 		87F076D82505C7EF0027B08A /* SmartShopping */ = {
 			isa = PBXGroup;
 			children = (
+				87F076F22505C85E0027B08A /* Extension */,
+				87F076F12505C8560027B08A /* View */,
+				87F076F02505C84B0027B08A /* Controller */,
 				87F076D92505C7EF0027B08A /* AppDelegate.swift */,
 				87F076DB2505C7EF0027B08A /* SceneDelegate.swift */,
-				87F076DD2505C7EF0027B08A /* ViewController.swift */,
 				87F076DF2505C7EF0027B08A /* Main.storyboard */,
 				87F076E52505C7F00027B08A /* Assets.xcassets */,
 				87F076E72505C7F00027B08A /* LaunchScreen.storyboard */,
@@ -68,6 +72,29 @@
 				87F076E22505C7EF0027B08A /* SmartShopping.xcdatamodeld */,
 			);
 			path = SmartShopping;
+			sourceTree = "<group>";
+		};
+		87F076F02505C84B0027B08A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87F076F5250787840027B08A /* ItemListVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		87F076F12505C8560027B08A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87F076F7250789D50027B08A /* ItemViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87F076F22505C85E0027B08A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F076DE2505C7EF0027B08A /* ViewController.swift in Sources */,
+				87F076F8250789D50027B08A /* ItemViewCell.swift in Sources */,
+				87F076F6250787840027B08A /* ItemListVC.swift in Sources */,
 				87F076E42505C7EF0027B08A /* SmartShopping.xcdatamodeld in Sources */,
 				87F076DA2505C7EF0027B08A /* AppDelegate.swift in Sources */,
 				87F076DC2505C7EF0027B08A /* SceneDelegate.swift in Sources */,
