@@ -15,14 +15,31 @@ class ItemListViewController: UIViewController {
     	
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let item = Items()
-
+        tableView.datasource = self
+        tableView.delegate = self
     }
 
-    @IBAction func AddItemBtnWasPressed(_ sender: Any) {
+    @IBAction func AddItemBtnWasPressed(_ sen	der: Any) {
         print("button was pressed successfully.")
     
     }
+}
+
+extension ItemListViewController: UITableViewDataSource, UITableViewDelegate{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell") as? ItemViewCell else {return
+            UITableViewCell()
+        }
+    }
+    
     
 }
